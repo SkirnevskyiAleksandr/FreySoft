@@ -8,6 +8,7 @@ $white-color:#FFFFFF;
     width:100%;
     max-width: $main-max-width;
     max-height: $main-max-height;
+    padding-top: 24px;
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -22,15 +23,14 @@ $white-color:#FFFFFF;
         display:flex;
         flex-direction: row;
         justify-content: flex-start;
-        background-color: red;
-        .logo{
+            .logo{
             width: 38%;
             height: 40px;
             display:flex;
             flex-direction: row;
             justify-content: flex-start;
             align-items: center;
-            background-color:green;
+            // background-color:green;
             &__picture-wrapper{
                 width:37.58px;
                 height: 40px;
@@ -71,7 +71,7 @@ $white-color:#FFFFFF;
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
-                background-color:brown;
+                // background-color:brown;
                 &__item{
                     padding:auto;
                     width:69px;
@@ -91,7 +91,7 @@ $white-color:#FFFFFF;
                 }
                 &__item:hover{
                     color: $green-color;
-                    font-weight:950;
+                    // font-weight:950;
                 }
             }
         }
@@ -118,7 +118,7 @@ $white-color:#FFFFFF;
         }
         .contact:hover{
             color:$green-color;
-            font-weight:950;
+            // font-weight:950;
         }    
     }
     
@@ -126,6 +126,7 @@ $white-color:#FFFFFF;
     .top-block{
         width:100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items:center;
         .top-row{
@@ -136,12 +137,12 @@ $white-color:#FFFFFF;
             flex-direction: row;
             justify-content: flex-start;
             align-items:center;
-            background-color:yellow;
+            // background-color:yellow;
             .job-for-you{
                 display:flex;
                 width:38%;
 
-                background-color:cadetblue;
+                // background-color:cadetblue;
                 &__title{
                 font-family:$font-Helvetica;
                 font-style: normal;
@@ -150,6 +151,9 @@ $white-color:#FFFFFF;
                 line-height: 111%;
                 color:$white-color;
                 letter-spacing: -1px;
+                span{
+                    color:$green-color;
+                }
                 }
             }
             .text{
@@ -162,5 +166,43 @@ $white-color:#FFFFFF;
                 color:$white-color;
             }
         }
+        // Gallery with pictures
+        .gallery{
+            width:100%;
+            display:flex;
+            flex-direction: column;
+            .pictures-row{
+                height: 222px;
+                display:flex;
+                flex-direction: row;
+                // .pictures-row__item{
+                //     display:flex;
+                //     width:378px;
+                //     height:212px;
+                //     padding-right: 20px;
+                //     .picture{
+                //         width:100%;
+                //         height: 100%;
+                //         border-radius: 10px;
+                //     }
+                // } 
+                    .pictures-row__item{
+                        
+                    }
+                .pictures-row__item_cut{
+                    display:flex;
+                    width:90px;
+                    height:212px;
+                    padding-right: 20px;
+                    
+                    .picture{
+                        width:100%;
+                        height: 100%;
+                        border-top-right-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                    }
+                }
+            }
+        }
     }
-}
+}    
