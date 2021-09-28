@@ -30,7 +30,6 @@ $white-color:#FFFFFF;
             flex-direction: row;
             justify-content: flex-start;
             align-items: center;
-            // background-color:green;
             &__picture-wrapper{
                 width:37.58px;
                 height: 40px;
@@ -61,6 +60,7 @@ $white-color:#FFFFFF;
         }
         .header-nav{
             width:40%;
+            padding-left: 110px;
             display:flex;
             justify-content: center;
             align-items: center;
@@ -141,8 +141,6 @@ $white-color:#FFFFFF;
             .job-for-you{
                 display:flex;
                 width:38%;
-
-                // background-color:cadetblue;
                 &__title{
                 font-family:$font-Helvetica;
                 font-style: normal;
@@ -151,13 +149,14 @@ $white-color:#FFFFFF;
                 line-height: 111%;
                 color:$white-color;
                 letter-spacing: -1px;
-                span{
-                    color:$green-color;
-                }
+                    span{
+                        color:$green-color;
+                    }
                 }
             }
             .text{
                 width:40%;
+                padding-left: 100px;
                 font-family:$font-Helvetica;
                 font-style: normal;
                 font-weight: normal;
@@ -175,6 +174,7 @@ $white-color:#FFFFFF;
                 height: 222px;
                 display:flex;
                 flex-direction: row;
+                justify-content: space-between;
                 .pictures-row__item{
                     display:flex;
                     width:378px;
