@@ -77,6 +77,9 @@ $padding-desktop:0 5%;
                         }
                     }
                 }
+                @media screen and(max-width:320px) {
+                    width: 150%;
+                }
             }
             .header-nav{
                 width:45%;
@@ -236,6 +239,11 @@ $padding-desktop:0 5%;
                 @media screen and (max-width:768px) {
                     width: 100%;
                     h1{margin-bottom:0;}
+                };
+                @media screen and(max-width:320px) {
+                    .job-for-you__title{
+                        font-size: 40px;
+                    }
                 }
             }
             .text{
@@ -252,6 +260,9 @@ $padding-desktop:0 5%;
                     width: 80%;
                     padding-left: 0;
                     font-size: 16px;
+                };
+                @media screen and (max-width:320px) {
+                    width: 100%;
                 }
             }
         }
@@ -275,7 +286,12 @@ $padding-desktop:0 5%;
                         height: 100%;
                         border-radius: 10px;
                         object-fit: cover;
-                    }    
+                    }
+                    @media screen and(max-width:320px) {
+                        width:119.1px;
+                        height: 66.8px;
+                        margin-right: 6px;
+                    }        
                 }
                 @media screen and (max-width:1440px) {
                     .desktop{
@@ -290,7 +306,18 @@ $padding-desktop:0 5%;
                         margin-right:0;
                     }    
                 }
-                
+                @media screen and(max-width:320px) {
+                    height: 70px;
+                    margin-bottom: 2px;
+                    .desktop{
+                        width:90px;
+                        height: 66.8px;
+                    }
+                    .cut{
+                        width:90px;
+                        margin-left: 6px;
+                    }
+                }                
                 .background{
                     width:378px;
                     height:212px;
@@ -313,8 +340,24 @@ $padding-desktop:0 5%;
                             display:none;
                         }
                     }
+                    @media screen and (max-width:320px) {
+                        width:119.1px;
+                        height: 66.8px;
+                        margin-right: 6px;
+                        background-image:  url("../images/second-row-galery/background-mobile.jpg");
+                    }
                     
-                } 
+                }
+                @media screen and(max-width:320px) {
+                    .mobile-second-row{
+                        width:70px;
+                        margin-right: 0;
+                        .picture{
+                            border-top-right-radius:0;
+                            border-bottom-right-radius: 0;;
+                        }
+                    }
+                }
                 .pictures-row__item_cut{
                     display:flex;
                     width:40px;
@@ -351,6 +394,11 @@ $padding-desktop:0 5%;
                 .second-end{
                     width:150px;
                     @media screen and(max-width:1440px) {
+                        display:none;
+                    }
+                }
+                @media screen and(max-width:320px) {
+                    .mobile{
                         display:none;
                     }
                 }
