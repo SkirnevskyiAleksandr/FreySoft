@@ -4,13 +4,13 @@ var rename = require('gulp-rename');
 var sass = require('gulp-sass')(require('sass'));
 
 function css_style(done){
-    gulp.src('./scss/**/*')
+    gulp.src('./scss/style.scss')
         .pipe(sass({
             errorLogToConsole: true,
-            outputStyle:'compressed'
+            outputStyle:'compressed' 
         }))
         .on('error', console.error.bind(console))
-        .pipe(rename({suffix: '.min'}))
+        .pipe(rename({suffix: '.min'})) 
         .pipe(gulp.dest('./css/'))
         .pipe(browserSync.stream());
     done();     
@@ -39,5 +39,5 @@ function browserRelod(done){
     done();
 }
 
-gulp.task("default", gulp.parallel(sync, watchFiles));
+gulp.task("default", gulp.parallel(sync, watchFiles,watchSass));
 gulp.task(sync);
