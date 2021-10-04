@@ -4,6 +4,9 @@
     flex-direction: column;
     justify-content: center;
     align-items:center;
+    background: linear-gradient(180deg, rgba(2, 2, 19, 0) 0%, #020213 100%) bottom;
+    
+    background-blend-mode: screen;
     @import'./header';
     @import'./top-row';
     @import'./gallery';
