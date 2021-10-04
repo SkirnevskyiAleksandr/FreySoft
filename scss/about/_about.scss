@@ -11,7 +11,7 @@
     h2{
         margin: 0px;
         width: 400px;
-        min-width: 348px;
+        // min-width: 348px;
         height: 145px;
         font-family: $font-Helvetica;
         font-style: normal;
@@ -47,6 +47,7 @@
         height:411px ;
         h2{
             width:100%;
+            min-width: 100px;
             height: 30px;
             margin-bottom: 48px;
             font-size: 32px;
